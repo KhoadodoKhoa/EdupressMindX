@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Promotions</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="EduPress Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="course-provider-dashboard.html">Dashboard</a></li>
+                    <li><a href="create-course.html">Create Course</a></li>
+                    <li><a href="manage-courses.html">Manage Courses</a></li>
+                    <li><a href="promotions.html">Manage Promotions</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Promotions Section -->
+    <section class="promotions">
+        <div class="container">
+            <h1>Manage Promotions</h1>
+            <form>
+                <label for="promotion-code">Promotion Code</label>
+                <input type="text" id="promotion-code" name="promotion-code" required>
+
+                <label for="discount-percent">Discount Percentage</label>
+                <input type="number" id="discount-percent" name="discount-percent" required>
+
+                <label for="valid-until">Valid Until</label>
+                <input type="date" id="valid-until" name="valid-until" required>
+
+                <button type="submit" class="btn-small">Add Promotion</button>
+            </form>
+
+            <h2>Current Promotions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Promotion Code</th>
+                        <th>Discount</th>
+                        <th>Valid Until</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LEARN20</td>
+                        <td>20%</td>
+                        <td>2024-12-31</td>
+                        <td>
+                            <button class="btn-small">Edit</button>
+                            <button class="btn-small">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Repeat for other promotions -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 EduPress | Powered by ThinPress</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
